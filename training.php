@@ -67,5 +67,43 @@ function max_array($arr){
 
 echo "4番：";
 echo max_array($array)."\n";
-}
+?>
+
+<?php
+
+
+$result = 'test<h1>clear<h1>';
+    echo strip_tags ($result);
     
+?>
+
+
+<?php
+
+
+$colour = array('red','blue','yellow');
+    array_push($colour,'green','purple');
+    print_r($colour);
+    
+?>
+
+
+<?php
+
+$trees1 = array('maple','cebar');
+$trees2 = array('beech','fir');
+
+$result = array_merge($trees1,$trees2);
+    print_r($result);
+?>
+
+<?php
+
+
+$time = mktime(10,10,10);
+    var_dump(date('Y年m月d日h時i分s秒',$time));
+    
+    echo "\n";
+    echo date('Y-m-d');
+    
+
